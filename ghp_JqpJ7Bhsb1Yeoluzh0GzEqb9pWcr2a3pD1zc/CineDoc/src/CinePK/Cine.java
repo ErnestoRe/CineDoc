@@ -62,6 +62,13 @@ public class Cine {
 	public void setPrecioEntrada(int precioEntrada) {
 		this.precioEntrada = precioEntrada;
 	}
+
+	@Override
+	public String toString() {
+		return "Cine [aforo=" + aforo + ", butacasOcupadas=" + butacasOcupadas + ", tituloPelicula=" + tituloPelicula
+				+ ", precioEntrada=" + precioEntrada + "]";
+	}
+	
 	
 	
 	
