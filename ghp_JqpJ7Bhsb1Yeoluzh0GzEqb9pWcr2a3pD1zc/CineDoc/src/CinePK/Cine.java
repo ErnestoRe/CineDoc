@@ -94,5 +94,11 @@ public class Cine {
 		return butacasOcupadas / aforo * 100;
 	}
 	
+	public int ingresosSala() {
+		return butacasOcupadas * precioEntrada;
+	}
 	
+	public void vaciarSala() {
+		butacasOcupadas = 0;
+	}
 }
