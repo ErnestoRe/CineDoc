@@ -2,11 +2,18 @@ package CinePK;
 
 public class Cine {
 
+	/**
+	 * Creamos las variables
+	 */
 	private int aforo;
 	private int butacasOcupadas;
 	private String tituloPelicula;
 	private int precioEntrada;
 	
+	/**
+	 * Constructor sin parametros
+	 * @return
+	 */
 	public Cine() {
 		super();
 		aforo = 100;
@@ -15,6 +22,10 @@ public class Cine {
 		precioEntrada = 5;
 	}
 
+	/**
+	 * Constructor con 1 parametros
+	 * @param aforo int
+	 */
 	public Cine(int aforo) {
 		super();
 		this.aforo = aforo;
@@ -23,6 +34,12 @@ public class Cine {
 		precioEntrada = 5;
 	}
 
+	/**
+	 * Constructor con 3 parametros
+	 * @param aforo int
+	 * @param tituloPelicula String
+	 * @param precioEntrada int
+	 */
 	public Cine(int aforo, String tituloPelicula, int precioEntrada) {
 		super();
 		this.aforo = aforo;
@@ -69,7 +86,13 @@ public class Cine {
 				+ ", precioEntrada=" + precioEntrada + "]";
 	}
 	
+	public int butacasLibre() {
+		return aforo - butacasOcupadas;
+	}
 	
+	public int porcentajeOcupacion() {
+		return butacasOcupadas / aforo * 100;
+	}
 	
 	
 }
