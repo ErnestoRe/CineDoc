@@ -101,4 +101,5 @@ public class Cine {
 	public void vaciarSala() {
 		butacasOcupadas = 0;
 	}
+	
 }
